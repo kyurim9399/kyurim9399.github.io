@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Style</title>
+
+    <div class="page-header">
+        <h1><a href="storefront.html">Unique Style</a></h1>
+    </div>
+
+    <script>
+        window.onload = function() {
+        var img1 = document.getElementById("img1");
+        var i = 0;
+        setInterval(function(){
+            img1.src = "images/brown_coat"+ i +".jpeg";
+            i++
+            if(i == 3) {i = 0}; 
+            }
+        , 1000);
+
+        var img2 = document.getElementById("img2");
+        var j = 0;
+        setInterval(function(){
+            img2.src = "images/red_dress"+ j +".jpeg";
+            j++
+            if(j == 3) {j = 0}; 
+            }
+        , 1000);
+        
+
+        var img3 = document.getElementById("img3");
+        var k = 0;
+        setInterval(function(){
+            img3.src = "images/blouse"+ k +".jpeg";
+            k++
+            if(k == 3) {k = 0}; 
+            }
+        , 1000);
+
+        var links = document.querySelector("#links");
+var flagimages = document.querySelector("#flag-images");
+var flags = document.querySelector("#flags");
+function event(){
+    for(var j = 0; j < countries.length; j++){
+        var img = document.createElement("img");
+        img.src = './flags/' + countries[j].Name + '-flag.png';
+        img.alt = countries[j].Name;
+        img.width = 200;
+        img.height = 200;   
+        document.querySelector("#flags").appendChild(img);
+    };
+    links.removeChild(flagimages);
+};
+flagimages.onclick = event;
+
+        }
+        
+        function changeover(num){
+            document.getElementById(num).src = "images/m_c"+ num + ".jpeg";
+        }
+        function changeout(num){
+            document.getElementById(num).src = "images/c"+ num + ".jpeg";
+        }
+               
+    </script>
+    <link rel='stylesheet' href='sitecss.css' type='text/css' media='screen'>
+</head>
+<body>
+
+<nav class="category">
+<div>
+    <ul>
+        <li> <a href="#Best">BEST</a> </li>
+        <li> <a href="#outer">OUTER</a> </li>
+        <li> <a href="#Top">TOP</a> </li>
+        <li> <a href="#Dress">DRESS</a> </li>
+        <li> <a href="#Bottom">BOTTOM</a> </li>
+        <li> <a href="reflection.html">REFLECT</a> </li>
+    </ul>
+</div>
+</nav>
+
+    <div id = "Best">
+        <h2>Best 3</h2>
+        <div class="col-4">
+           <img id="img1">
+           <p id="title"> Brown Long Coat </p>
+           <p id = "price"> C$ 89.9 </p>
+           <p id = "desc"> Classic color and herringbone pattern style coat </p>
+          </div>
+          <div class="col-4">
+            <img id="img2">
+            <p id="title"> Flower Mini Red Dress </p>
+            <p id = "price">C$ 49.0</p>
+            <p id = "desc"> A mini millet dress that is good for small people. </p>
+          </div>
+          <div class="col-4">
+            <img id="img3"></img>
+            <p id="title"> Raleigh Crop Blouse </p>
+            <p id = "price"> C$ 39.5 </p>
+            <p id = "desc"> Blouse with a good color and pattern and color. </p>
+          </div>
+    </div>
+
+    <br><br><br><br>
+    
+
+    <div id = "outer">
+        <h2>Outer</h2>
+        <div class="col-4">
+           <img id = "0" src="images/c0.jpeg" onmouseover="changeover('0')" onmouseout="changeout('0')">
+          </div>
+          <div class="col-4">
+            <img id = "1" src="images/c1.jpeg" onmouseover="changeover('1')" onmouseout="changeout('1')">
+          </div>
+          <div class="col-4">
+            <img id = "2" src="images/c2.jpeg" onmouseover="changeover('2')" onmouseout="changeout('2')">
+          </div>
+    </div>
+          
+
+
+    <br><br><br><br>  
+
+
+
+    <div id = "Top">
+        <h2>Top</h2>
+        <div class="col-4">
+           <img src="images/blouse0.jpeg"></img>
+           <p id="title"> Raleigh Crop Blouse </p>
+           <p id = "price">C$ 39.5</p>
+           <p id = "desc">Blouse with a good color and pattern and color. </p>
+          </div>
+          <div class="col-4">
+            <img src="images/checkered_shutter.jpeg"></img>
+            <p id="title"> Check Shirt </p>
+            <p id = "price">C$ 28.9</p>
+            <p id = "desc">Formal & classic, modern check pattern shirt </p>
+          </div>
+          <div class="col-4">
+          </div>
+    </div>
+
+    <br><br><br><br>  
+
+    <div id = "Dress">
+        <h2>Dress</h2>
+        <div class="col-4">
+            <img src="images/black_dress.jpeg">
+            <p id="title"> Czech Ruffle Color Dress </p>
+            <p id = "price">C$ 54.6</p>
+            <p id = "desc">A lovely mood with a soft texture and a calmer flare silhouette </p>
+        </div>
+        <div class="col-4">
+            <img src="images/pink_dress.jpeg">
+            <p id="title"> Flat Wrinkles Dress </p>
+            <p id = "price">C$ 53.6</p>
+            <p id = "desc">A natural mood creates a gentle Wrinkles detailing dress. </p>
+        </div>
+        <div class="col-4">
+            <img src="images/red_dress0.jpeg">
+            <p id="title"> Flower Mini Red Dress </p>
+            <p id = "price">C$ 49.0</p>
+            <p id = "desc">A mini millet dress that is good for small people. </p>
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+    
+    <div id = "Bottom">
+        <h2>Bottom</h2>
+        <div class="col-3">
+            <img src="images/brown_skirt.jpeg">
+            <p id="title"> Cookie Skirt </p>
+            <p id = "price">C$ 30.12</p>
+            <p id = "desc">A checkered pattern and classic-colored skirt </p>
+        </div>
+        <div class="col-3">
+            <img src="images/blue_skirt.jpeg">
+            <p id="title"> Piano Pants Skirt </p>
+            <p id = "price">C$ 26.53</p>
+            <p id = "desc">Detailed Wrinkles detail creates a richer flare fit for a lovely mood! </p>
+        </div>
+        <div class="col-3">
+            <img src="images/jeans.jpeg">
+            <p id="title"> Mosti Light blue Pants </p>
+            <p id = "price">C$ 35.29</p>
+            <p id = "desc">Enjoy refreshing light spring to summer with a refreshing light blue color </p>
+        </div>
+        <div class="col-3">
+            <img src="images/white_pants.jpeg">
+            <p id="title"> Vintage Haute Pants (Oatmeal color) </p>
+            <p id = "price">C$ 42.32</p>
+            <p id = "desc">Enjoy basics from spring to summer and autumn all the time! </p>
+        </div>
+    </div>
+
+
+    <br><br><br><br>
+
+<footer>
+    <p class = "footer"><a href="https://kyurim9399.github.io/">©2020 - Kyurim Kim </a></p>
+</footer>
+
+</body>
+</html>     
+
+

@@ -1,0 +1,243 @@
+/********************************************************************
+I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy. No part of this assignment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assignment for my use.
+I also declare that no part of this assignment has been distributed to other students.
+Name: kyurim kim
+Dated: 3/25/2020
+********************************************************************/
+@import url("//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext");
+
+* {
+    box-sizing: border-box;
+  }
+
+ #Best, #outer, #Top, #Dress, #Bottom {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+
+html, body {
+    margin: 5%;
+    height: 100%;
+}
+
+
+.category{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    background-color: rgb(112, 84, 46);
+    color : rgb(224, 199, 165);
+    font-style: initial;
+    font-weight:bold;
+}
+
+
+.category ul {
+    list-style-type: none;
+    list-style:none;
+    margin:0;
+    padding:0;
+}  
+.category ul li {
+    background-color:rgb(112, 84, 46);
+    padding-left:2px;
+    float:left;
+    width: 16.66%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.category ul li a{
+    background-color:rgb(112, 84, 46);
+    color: #eee;
+    text-decoration: none;
+    padding:0 10px;	
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:15px;
+    display:block;
+    padding: 10px 15px;
+    font-family: 'Gotu', sans-serif;
+}
+
+.category ul li a:hover{
+    background-color: rgb(148, 108, 108);
+    color: #fff;
+}
+
+
+ body{
+    box-sizing: border-box;
+}
+
+.page-header {
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    font-family: 'Lobster', cursive;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color :rgb(53, 36, 12);;
+    font-size: 85px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+
+
+body div h2{
+    margin-left:5%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#Bottom img{
+    width: 100%;
+    height: auto;
+}
+
+td{
+    padding-left:60px
+}
+
+#title{
+    font-size:18px;
+    font-weight: bold;
+}
+
+#desc{
+    color : gray;
+}
+
+
+
+
+h1, h2, h3, h4 {
+    font-family: "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+}
+
+
+    
+main{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+
+#contact{
+    text-align: center;
+}
+    
+.Contact form {
+    display: grid;
+    margin-top: 3em;
+    padding: 2em;
+    border: 1px solid black;
+    max-width: 400px;
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 0.3fr 1fr;
+    align-items: center;
+    grid-gap: 20px;
+}
+    
+.commentButton{
+    display: inline-block;
+    grid-column: 2/3;
+    grid-gap: 40px;
+}
+    
+input[type="Search"],
+input[type="reset"] {
+    width: 100px;
+    height: 40px;
+    color: black;
+    padding: 20px;
+    font-size: 1em;
+}
+    
+input[type="Search"]:hover,
+input[type="Search"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+     background-color: grey;
+}
+
+    
+footer{
+    margin-top: 20px;
+    text-align: center;
+    padding: .5px;
+    font-size: 1em;
+    background-color:rgb(112, 84, 46);
+    color: white;
+}
+
+.reflect{
+    margin : 50px 5% 0% 5%;
+}
+
+.footer a{
+    background-color:rgb(112, 84, 46);
+    color: #eee;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:15px;
+    display:block;
+    padding: 10px 15px;
+    font-family: 'Gotu', sans-serif;
+}
+    
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+        font-size: 9vw;
+    }  
+
+    hr{
+        width : 400px;
+    }
+
+    .category {
+        font-size:13px;
+    }
+    .category ul li {
+        background-color:rgb(112, 84, 46);
+        padding-left:2px;
+        float:left;
+        width: 100%;
+        text-align: center;
+    }
+  }
